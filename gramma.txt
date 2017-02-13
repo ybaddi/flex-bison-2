@@ -17,7 +17,9 @@ INST : idf = CONST ';'
         | IF PAR_OPEN  IDF  OP_LOGIC  INSSUB  PAR_CLOSE THEN LIST_INST ENDIF 
  OP_LOGIC : == | <= | < | >= | > | !=
  INSSUB : MULT ADDSUBAUX
-
+        | IDF
+        | NOMBRE   // or just AUX
+        ;            
 ADDSUBAUX : - MULT ADDSUBAUX
 ADDSUBAUX : + MULT ADDSUBAUX
 ADDSUBAUX : epsilon

@@ -30,5 +30,5 @@ MULT : epsilon
 
 AUX: IDF
 AUX : NOMBRE
-AUX : (INSSUB)
+AUX : '(INSSUB)
 
